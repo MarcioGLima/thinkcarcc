@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_button"
+    android:minHeight="181dp"
+    tools:context=".Activities.InicioActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!--LINEAR LAYOUT DO TOPO DA MENSAGEM-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Inicio da Viagem"
+                android:textColor="@color/color_white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <!--FIM DO TEXTO-->
+
+
+            <!-- INICIO DO LINEAR PARA SPINNER PARA INSERÇÃO DO LUGAR QUE VOCE ESTÁ COMEÇANDO A CORRIDA-->
+            <TextView
+                android:id="@+id/inicio_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="TextView"
+                android:textColor="@color/color_white"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Inicio"
+                    android:textColor="@color/color_white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inicio_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95px"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edtext"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!--FIM DO CAMPO PARA INSERÇÃO DO INICIO DA VIAGEM-->
+
+            <!--INICIO DO CAMPO DE INSERÇÃO DO DESTINO-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txDestino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Destino"
+                    android:textColor="@color/color_white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/destino_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edtext"
+                    android:ems="10"
+                    android:inputType="text" />
+
+
+            </LinearLayout>
+
+            <!--FIM DO CAMPO DE DESTINO-->
+
+
+
+            <!-- INSERÇÃO DO KM ATUAL-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txKm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Km Atual"
+                    android:textColor="@color/color_white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/km_atual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edtext"
+                    android:ems="10"
+
+                    android:inputType="number" />
+
+
+            </LinearLayout>
+
+            <!--FIM DA INSERÇÃO DE KM'S-->
+
+
+            <!-- Abaixo é um LinearLayout para Spinner do Combustivel-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txComb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Combustivel"
+                    android:textColor="@color/color_white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/nivel_comb"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+
+                    android:layout_marginRight="100dp"
+
+
+                    android:background="@drawable/bg_spinner" />
+
+
+            </LinearLayout>
+            <!--FIM DO LINEARLAYOUT DO SPIINNER DO COMBUSTIVEL-->
+
+
+            <!-- INICIO DO LINEAR PARA SPINNER PARA SELEÇÃO DO CARRO-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txPlaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Placa do Veiculo"
+                    android:textColor="@color/color_white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/pesquisa_placa"
+                    android:layout_width="92dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edtext"
+                    android:ems="10"
+                    android:inputType="text" />
+
+
+
+
+             <!--   <Spinner
+                    android:id="@+id/placa_carro"
+                    android:layout_width="187dp"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/bg_spinner"
+
+
+                    /> -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="179dp">
+
+
+                <Button
+                    android:id="@+id/iniciar_viagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_inicio"
+                    android:text="Começar"
+                    android:textColor="@color/color_bkg_end"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34025a</color>
+    <color name="colorPrimaryDark">#550281</color>
+    <color name="colorAccent">#2a0148</color>
+    <color name="color_button">#2a0148</color>
+    <color name="color_text">#ecf0f1</color>
+    <color name="color_hint_text">#bdc3c7</color>
+    <color name="color_bkg_start">#6a08a0</color>
+    <color name="color_bkg_end">#34025a</color>
+    <color name="color_white">#ffffff</color>
+    <color name="cad_user">#8e48b7</color>
+
+</resources>
